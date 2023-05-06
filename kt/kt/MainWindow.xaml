@@ -1,0 +1,43 @@
+﻿<Window x:Class="kt.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:kt"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="464.635" Width="618.293">
+    <Grid>
+        <Button x:Name="ChoseTypeBut" Content="Добавть заметку" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="119" Click="Button_Click"/>
+        <Button Content="Посмотреть заметки" HorizontalAlignment="Left" Margin="258,10,0,0" VerticalAlignment="Top" Width="119" Click="Button_Click_1"/>
+        <Button Content="Удалить заметку" HorizontalAlignment="Left" Margin="134,10,0,0" VerticalAlignment="Top" Width="119"/>
+        <Grid x:Name="GridType" Visibility="Hidden">
+            <Button x:Name="AddTextBut" Content="Текст" HorizontalAlignment="Left" Margin="10,35,0,0" VerticalAlignment="Top" Width="57" Click="AddTextBut_Click"/>
+            <Button x:Name="AddJpgBut" Content="Картинка" HorizontalAlignment="Left" Margin="72,35,0,0" VerticalAlignment="Top" Width="57" Click="AddJpgBut_Click"/>
+        </Grid>
+        <Grid x:Name="GridText" Visibility="Hidden">
+            <TextBox HorizontalAlignment="Left" Height="23" Margin="10,91,0,0" TextWrapping="Wrap" Text="Текст" VerticalAlignment="Top" Width="200"/>
+            <Label Content="Заголовок" HorizontalAlignment="Left" Margin="10,60,0,0" VerticalAlignment="Top"/>
+            <Label Content="Содержание&#xD;&#xA;" HorizontalAlignment="Left" Margin="10,119,0,0" VerticalAlignment="Top" Height="25"/>
+            <TextBox x:Name="TxtTb" HorizontalAlignment="Left" Height="242" Margin="10,149,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="580" Text="{Binding ElementName=  ,Path= Text, Mode = TwoWay } "/>
+            <Button Content="Сохранить" HorizontalAlignment="Left" Margin="175,394,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_2"/>
+            <Label Content="Имя" HorizontalAlignment="Left" Margin="12,391,0,0" VerticalAlignment="Top"/>
+            <TextBox x:Name="TxtSaveTb" HorizontalAlignment="Left" Margin="50,396,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" />
+
+        </Grid>
+
+        <Grid x:Name="GridJpg" Visibility="Hidden">
+            <TextBox HorizontalAlignment="Left" Height="23" Margin="10,91,0,0" TextWrapping="Wrap" Text="Картинка" VerticalAlignment="Top" Width="200"/>
+            <Label Content="Заголовок" HorizontalAlignment="Left" Margin="10,60,0,0" VerticalAlignment="Top"/>
+            <Label Content="Содержание&#xD;&#xA;" HorizontalAlignment="Left" Margin="10,119,0,0" VerticalAlignment="Top" Height="25"/>
+            <InkCanvas Name="IC"  HorizontalAlignment="Left" Height="242" Margin="10,149,0,0" VerticalAlignment="Top" Width="580"   >
+                <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="242" VerticalAlignment="Top" Width="580" Margin="0,0,-578,-240"/>
+            </InkCanvas>
+            <Button x:Name="SaveJpgBut" Content="Сохранить" HorizontalAlignment="Left" Margin="175,394,0,0" VerticalAlignment="Top" Width="75" Click="SaveJpgBut_Click"/>
+            <Label Content="Имя" HorizontalAlignment="Left" Margin="12,391,0,0" VerticalAlignment="Top"/>
+            <TextBox x:Name="JpgSaveTb" HorizontalAlignment="Left" Margin="50,396,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" />
+
+            <Button x:Name="ChangeBrushBut" Content="Поменять кисть" HorizontalAlignment="Left" Margin="488,122,0,0" VerticalAlignment="Top" Width="102" Click="ChangeBrushBut_Click"/>
+
+        </Grid>
+    </Grid>
+</Window>
