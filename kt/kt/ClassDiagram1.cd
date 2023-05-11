@@ -12,25 +12,8 @@
     <Compartments>
       <Compartment Name="Nested Types" Collapsed="false" />
     </Compartments>
-    <NestedTypes>
-      <Class Name="kt.MainWindow.Memento" Collapsed="true">
-        <TypeIdentifier>
-          <NewMemberFileName>MainWindow.xaml.cs</NewMemberFileName>
-        </TypeIdentifier>
-      </Class>
-      <Class Name="kt.MainWindow.Caretaker" Collapsed="true">
-        <TypeIdentifier>
-          <NewMemberFileName>MainWindow.xaml.cs</NewMemberFileName>
-        </TypeIdentifier>
-      </Class>
-      <Class Name="kt.MainWindow.Originator" Collapsed="true">
-        <TypeIdentifier>
-          <NewMemberFileName>MainWindow.xaml.cs</NewMemberFileName>
-        </TypeIdentifier>
-      </Class>
-    </NestedTypes>
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAABAAAAAAAACgEAAAAAAEAAAEAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAACAAABAAAAAAAACgEAAAAAAEAAAEAACAAAAAA=</HashCode>
       <FileName>MainWindow.xaml.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" Collapsed="true" />
